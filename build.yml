@@ -1,0 +1,8 @@
+services:
+  web:
+    image: springboot_beancore:latest  # Using the image name from your Docker list
+    ports:
+      - "8080:8080"  # Expose port 8080 (common for Spring Boot apps)
+    environment:  # Optional environment variables (if needed)
+      - SPRING_APPLICATION_NAME=SpringBoot_BeanCore  # Example, replace with actual variables
+    command: ["java", "-jar", "app.jar"]  # Assuming your JAR file is named "app.jar"
